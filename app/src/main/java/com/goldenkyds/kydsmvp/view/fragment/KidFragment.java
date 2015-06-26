@@ -6,12 +6,15 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.goldenkyds.kydsmvp.R;
 import com.goldenkyds.kydsmvp.view.adapter.KidPagerAdapter;
+import com.goldenkyds.kydsmvp.view.adapter.SampleRecycleViewAdapter;
 
 /**
  * Created by borrom on 6/25/15.
@@ -36,6 +39,8 @@ public class KidFragment extends AbsFragment{
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+
 
         ViewPager pager = (ViewPager)view.findViewById(R.id.home_pager);
         pager.setAdapter(new KidPagerAdapter(getChildFragmentManager()));

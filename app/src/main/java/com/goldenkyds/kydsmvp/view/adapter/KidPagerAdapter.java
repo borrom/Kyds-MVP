@@ -17,7 +17,7 @@ public class KidPagerAdapter extends FragmentPagerAdapter{
 
     @Override
     public Fragment getItem(int position) {
-        return new SampleFragment();
+        return new SampleFragment().setDataToRecycleView();
     }
 
     @Override
