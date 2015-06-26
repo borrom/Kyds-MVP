@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_1"
+            android:checked="true"
+            android:title="Kid"/>
+        <item
+            android:id="@+id/navigation_item_2"
+            android:title="Education"/>
+        <item
+            android:id="@+id/navigation_item_3"
+            android:title="Food"/>
+        <item
+            android:id="@+id/navigation_item_4"
+            android:title="Music"/>
+        <item
+            android:id="@+id/navigation_item_5"
+            android:title="Read More"/>
+
+        <item
+            android:title="Application">
+            <menu>
+                <item android:id="@+id/setting"
+                    android:title="setting"/>
+                <item android:id="@+id/feedback_id"
+                    android:title="feedback"/>
+
+            </menu>
+            </item>
+    </group>
+</menu>
